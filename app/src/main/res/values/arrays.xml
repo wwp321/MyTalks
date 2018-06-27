@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pref_language_app_language_title">
+        <item>System default</item>
+        <item>Chinese,Simplified</item>
+        <item>Chinese,Traditional</item>
+        <item>Croatian</item>
+        <item>Czech</item>
+        <item>Dutch</item>
+        <item>English</item>
+        <item>French</item>
+        <item>German</item>
+        <item>Greek</item>
+        <item>Hungarian</item>
+        <item>Italian</item>
+        <item>Japanese</item>
+        <item>Kazakn</item>
+        <item>Korean</item>
+        <item>Polish</item>
+        <item>Portuguese</item>
+        <item>Portuguese,Brazilian</item>
+        <item>Romanian</item>
+        <item>Russian</item>
+        <item>Serbian</item>
+        <item>Spanish</item>
+        <item>Swedish</item>
+        <item>Turkish</item>
+    </string-array>
+    <string-array name="general_background_playback_titles">
+        <item>Always on</item>
+        <item>Headphones/external speakers</item>
+        <item>Off</item>
+    </string-array>
+    <string-array name="general_background_playback_values" >
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="pref_general_background_playback_titles" >
+        <item>Always on</item>
+        <item>Headphones/external speakers</item>
+        <item>Off</item>
+    </string-array>
+
+    <string-array name="pref_general_background_playback_values" >
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="pref_category_language_subtitle_language_titles" >
+        <item>Turn off subtitles</item>
+        <item>Afrikaans</item>
+        <item>Albanian</item>
+        <item>Algerian Arabic</item>
+        <item>Amharic</item>
+        <item>English</item>
+    </string-array>
+    <string-array name="pref_category_language_subtitle_language_values" />
+    <string-array name="pref_category_downloads_quality_titles" >
+        <item>Ask each time</item>
+        <item>HD</item>
+        <item>SD</item>
+    </string-array>
+    <string-array name="pref_category_downloads_quality_values" >
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="pref_category_downloads_location_titles" >
+        <item>Internal Storage</item>
+    </string-array>
+    <string-array name="pref_category_privacy_clear_watch_history_titles" >
+        <!--<item>good</item>-->
+    </string-array>
+    <string-array name="pref_dump_entries">
+
+        <item>dump</item>
+    </string-array>
+</resources>

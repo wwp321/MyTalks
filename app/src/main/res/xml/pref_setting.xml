@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="@string/pref_mainscreen_key">
+
+    <PreferenceCategory android:title="General"
+        >
+        <CheckBoxPreference
+            android:key="general_limit_mobile_data_usage"
+            android:summary="Only stream HD video on Wi-Fi."
+            android:title="Limit mobile data usage" />
+
+        <ListPreference
+            android:key="@string/general_background_playback_key"
+            android:title="Background playback"
+            android:summary="Off"
+            android:entries="@array/pref_general_background_playback_titles"
+            android:entryValues="@array/pref_general_background_playback_values"
+            />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/pref_actegory_notifications"
+        >
+        <CheckBoxPreference
+            android:title="@string/pref_category_new_talks"
+            android:key="@string/pref_category_new_talks_key"
+            android:summary="@string/pref_category_new_talks_summary"
+            android:defaultValue="true"/>
+
+        <CheckBoxPreference
+            android:title="@string/pref_category_recom_talks"
+            android:key="@string/pref_category_recom_talks_key"
+            android:summary="@string/pref_category_recom_talks_summary"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/pref_category_language"
+        >
+        <ListPreference
+            android:title="@string/pref_category_language_app_language"
+            android:key="@string/pref_category_language_app_language_key"
+            android:entries="@array/pref_language_app_language_title"
+            android:entryValues="@array/pref_language_app_language_title"
+            />
+
+        <ListPreference
+            android:title="@string/pref_category_language_subtitle_language"
+            android:key="@string/pref_category_language_subtitle_language_key"
+            android:entries="@array/pref_category_language_subtitle_language_titles"
+            android:entryValues="@array/pref_category_language_subtitle_language_titles"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/pref_category_downloads">
+        <CheckBoxPreference
+            android:title="@string/pref_category_downloads_add_over_wifi_only"
+            android:key="@string/pref_category_downloads_add_over_wifi_only_key"
+            android:summary="@string/pref_category_downloads_add_over_wifi_only_summary"
+            android:defaultValue="true"/>
+
+        <ListPreference
+            android:title="@string/pref_category_downloads_quality"
+            android:key="@string/pref_category_downloads_quality_key"
+            android:entries="@array/pref_category_downloads_quality_titles"
+            android:entryValues="@array/pref_category_downloads_quality_values"
+            />
+
+        <ListPreference
+            android:title="@string/pref_category_downloads_location"
+            android:key="@string/pref_category_downloads_location_key"
+            android:entries="@array/pref_category_downloads_location_titles"
+            android:entryValues="@array/pref_category_downloads_location_titles"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/pref_category_privacy">
+
+        <ListPreference
+            android:title="@string/pref_category_privacy_clear_watch_history"
+            android:key="@string/pref_privacy_clr_watch_history_key"
+            android:summary="@string/pref_privacy_clear_watch_history_summary"
+            android:entries="@array/pref_category_privacy_clear_watch_history_titles"
+            android:entryValues="@array/pref_category_privacy_clear_watch_history_titles"
+            />
+
+        <ListPreference
+            android:title="@string/pref_privacy_clear_search_history"
+            android:key="@string/pref_privacy_clear_search_history_key"
+            android:summary="@string/pref_privacy_clear_search_history_summary"
+            android:entries="@array/pref_category_privacy_clear_watch_history_titles"
+            android:entryValues="@array/pref_category_privacy_clear_watch_history_titles"
+            />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/pref_category_about">
+
+        <ListPreference
+            android:title="@string/pref_about_licenses"
+            android:key="@string/pref_about_licenses_key"
+            android:summary="@string/pref_about_licenses_summary"
+            android:entries="@array/pref_dump_entries"
+            android:entryValues="@array/pref_dump_entries"
+            />
+
+        <ListPreference
+            android:title="@string/pref_about_credits"
+            android:key="@string/pref_about_credits_key"
+            android:summary="@string/pref_about_credits_summary"
+            android:entries="@array/pref_dump_entries"
+            android:entryValues="@array/pref_dump_entries"
+            />
+
+        <ListPreference
+            android:title="@string/pref_about_about_ted"
+            android:key="@string/pref_about_ted_key"
+            android:entries="@array/pref_dump_entries"
+            android:entryValues="@array/pref_dump_entries"
+            />
+
+        <ListPreference
+            android:title="@string/pref_about_version"
+            android:key="@string/pref_about_version_key"
+            android:summary="@string/pref_about_version_summary"
+            android:entries="@array/pref_dump_entries"
+            android:entryValues="@array/pref_dump_entries"
+            android:selectable="false"
+            />
+    </PreferenceCategory>
+
+</PreferenceScreen>
