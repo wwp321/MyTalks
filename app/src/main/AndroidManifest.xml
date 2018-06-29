@@ -44,11 +44,13 @@
             android:parentActivityName=".LicensesActivity" />
         <activity
             android:name=".SearchActivity"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivity"
+            android:launchMode="singleInstance"/>
         <activity
             android:name=".WebPlayerActivity"
             android:hardwareAccelerated="true"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"/>
 
     </application>
 
