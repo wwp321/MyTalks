@@ -41,6 +41,7 @@ import io.reactivex.ObservableOnSubscribe;
 import io.reactivex.Observer;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
+import timber.log.Timber;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -181,7 +182,7 @@ public class TalksFragment extends Fragment {
             @Override
             public void onNext(TalksItem value) {
                 talksItemList.add(value);
-                Log.e(TAG, "onNext: " + value.getLink() );
+                Timber.d("onNext: " + value.getLink() );
             }
 
             @Override
@@ -191,7 +192,7 @@ public class TalksFragment extends Fragment {
 
             @Override
             public void onComplete() {
-                Log.d(TAG, "onComplete: ");
+                Timber.d("onComplete: ");
                 Message message = new Message();
                 message.what = type;
                 handler.sendMessage(message);
@@ -268,7 +269,6 @@ public class TalksFragment extends Fragment {
         @Override
         public void onReceive(Context context, Intent intent) {
             String selector = intent.getStringExtra("CATEGORY_SELECTOR");
-            Log.e(TAG, "onReceive: " + selector );
             initTalksItemList(selector,  TALKS_ITEM_UPDATE);
         }
     }

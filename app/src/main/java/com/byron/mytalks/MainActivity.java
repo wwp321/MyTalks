@@ -17,6 +17,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import timber.log.Timber;
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -63,10 +65,10 @@ public class MainActivity extends AppCompatActivity
         switch (requestCode) {
             case REQUEST_CODE_FOR_LOGIN:
                 if(RESULT_OK == resultCode) {
-                    Log.d(TAG, "onActivityResult: login success");
+                    Timber.d("login success");
                     String email = data.getStringExtra("email");
                     String password = data.getStringExtra("password");
-                    Log.d(TAG, "onActivityResult: " + email + ":" + password);
+                    Timber.d("onActivityResult: " + email + ":" + password);
                 }
                 break;
             default:
@@ -125,11 +127,11 @@ public class MainActivity extends AppCompatActivity
         toolbar.setTitle(item.getTitle());
         if (id == R.id.nav_talks) {
             // Handle the camera action
-            Log.d(TAG, "onNavigationItemSelected: talks");
+            Timber.d("onNavigationItemSelected: talks");
             replaceFragment(new TalksFragment());
 
         } else if (id == R.id.nav_playlists) {
-            Log.d(TAG, "onNavigationItemSelected: playlist");
+            Timber.d("onNavigationItemSelected: playlist");
             replaceFragment(new PlayListsFragment());
         } else if (id == R.id.nav_podcasts) {
 

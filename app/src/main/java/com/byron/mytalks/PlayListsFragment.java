@@ -17,6 +17,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+import timber.log.Timber;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -35,7 +37,7 @@ public class PlayListsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        Log.d(TAG, "onCreateView: ");
+        Timber.d("onCreateView: ");
         View view = inflater.inflate(R.layout.fragment_play_lists, container, false);
 
         initPlaylists();
