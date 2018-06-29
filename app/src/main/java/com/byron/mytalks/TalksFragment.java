@@ -204,11 +204,6 @@ public class TalksFragment extends Fragment {
     }
 
     void initTalksCategoryList() {
-//        mTalksCategoryList.add(new TalksCategoryItem("今日焦点", "div#block-D"));
-//        mTalksCategoryList.add(new TalksCategoryItem("国内","div#block-H"));
-//        mTalksCategoryList.add(new TalksCategoryItem("国外", "div#block-I"));
-//        mTalksCategoryList.add(new TalksCategoryItem("社会", "div#bokck-K"));
-
         Observable<TalksCategoryItem> observable = Observable.create(
                 new ObservableOnSubscribe<TalksCategoryItem>() {
                     @Override
@@ -246,7 +241,6 @@ public class TalksFragment extends Fragment {
 
             @Override
             public void onNext(TalksCategoryItem value) {
-                Log.e(TAG, "onNext: title:" + value.getmCategoryTitle() + ",selector:" + value.getmCategorySelector() );
                 mTalksCategoryList.add(value);
             }
 

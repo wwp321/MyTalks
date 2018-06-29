@@ -6,6 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".PrefOnlyTextActivity">
 
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:id="@+id/pref_only_text_toolbar"/>
+
     <TextView
         android:id="@+id/licenses_detail"
         android:layout_width="match_parent"
