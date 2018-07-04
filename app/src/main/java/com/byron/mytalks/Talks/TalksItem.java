@@ -1,6 +1,8 @@
 package com.byron.mytalks.Talks;
 
-public class TalksItem {
+import org.litepal.crud.DataSupport;
+
+public class TalksItem extends DataSupport{
 
     private String author;
     private String title;

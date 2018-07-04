@@ -15,6 +15,8 @@ import com.byron.mytalks.R;
 import com.byron.mytalks.WebPlayerActivity;
 import com.squareup.picasso.Picasso;
 
+import org.litepal.tablemanager.Connector;
+
 import java.util.List;
 
 public class TalksAdapter extends RecyclerView.Adapter<TalksAdapter.ViewHolder> {
@@ -34,7 +36,8 @@ public class TalksAdapter extends RecyclerView.Adapter<TalksAdapter.ViewHolder> 
             public void onClick(View v) {
                 int position = holder.getAdapterPosition();
                 TalksItem item = talksItemList.get(position);
-
+                Connector.getDatabase();
+                item.save();
                 String link = item.getLink();
 
                 if(link.contains("javascript")) {
